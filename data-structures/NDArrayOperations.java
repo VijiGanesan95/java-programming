@@ -1,4 +1,4 @@
-package com.myprogram.datastructures.data_structures;
+package data-structures;
 import java.util.*;
 public class NDArrayOperations {
 	public static void main(String args[]) {
