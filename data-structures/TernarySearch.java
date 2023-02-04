@@ -1,4 +1,4 @@
-package com.myprogram.datastructures.data_structures;
+package data-structures;
 import java.util.*;
 public class TernarySearch {//time complexity - O(log n base3)
 	public static void main(String args[]) {
