@@ -1,5 +1,5 @@
 //jump search is used in sorted arrays where we search element by jumping ahead with a block size and if the key is present in a block we traverse back with a linear search
-package com.myprogram.datastructures.data_structures;
+package data-structures;
 import java.util.*;
 /*public class JumpSearch {//performance=linear search<jump search<binary search
 	public static void main(String args[]) {//Time complexity=O(sqrt(n))
