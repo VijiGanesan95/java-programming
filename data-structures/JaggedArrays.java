@@ -1,4 +1,4 @@
-package com.myprogram.datastructures.data_structures;
+package data-structures;
 import java.util.*;
 //Jagged arrays are array of arrays in which member arrays are of different length
 public class JaggedArrays {
