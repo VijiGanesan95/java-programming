@@ -1,4 +1,4 @@
-package com.myprogram.datastructures.data_structures;
+package data-structures;
 import java.util.*;
 public class LinearSearchAlgorithm {//Time complexity - O(n)
 	public static void main(String args[]) {
