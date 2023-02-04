@@ -1,5 +1,5 @@
 //used in sorted arays and improved variant of bst where the midpoint is found by probing position near the target value
-package com.myprogram.datastructures.data_structures;
+package data-structures;
 import java.util.*;
 public class InterpolationSearch {//time complexity = O(log(log n))
 	public static void main(String args[]) {
