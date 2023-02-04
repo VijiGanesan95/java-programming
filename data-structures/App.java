@@ -1,4 +1,4 @@
-package com.myprogram.datastructures.data_structures;
+package data-structures;
 
 /**
  * Hello world!
