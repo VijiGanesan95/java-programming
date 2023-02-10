@@ -1,0 +1,15 @@
+package com.springframework.springsample;
+
+import java.lang.reflect.Method;
+
+import org.springframework.aop.AfterReturningAdvice;
+
+public class AfterAdviceClass implements AfterReturningAdvice{
+
+	@Override
+	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+		System.out.println("after advice method invoked");
+		
+	}
+
+}
