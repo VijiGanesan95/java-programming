@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+  <bean id="adr" class="com.springframework.springsample.Address">
+  	<property name="stNo" value="8316"></property>
+  	<property name="lane" value="Russet Court"></property>
+  	<property name="City" value="Highlands Ranch"></property>
+  	<property name="state" value="CO"></property>
+  	<property name="postal_code" value="80126"></property>
+  </bean>
+ <bean id="emp" class="com.springframework.springsample.Employee" init-method="myInit" destroy-method="myDestroy">
+ <property name="eid" value="100"></property>
+ <property name="ename" value="viji"></property>
+ <property name="eaddress" ref="adr"></property>
+ 	
+ </bean> 
+ <bean id="cust" class="com.springframework.springsample.CustomerService">
+ 	<constructor-arg name="name" value="viji"></constructor-arg>
+ 	<constructor-arg name="url" value="https://www.google.com"></constructor-arg>
+ </bean>
+ <bean id="BeforeAdviceClass" class="com.springframework.springsample.BeforeAdviceClass"></bean> 
+ <bean id="AfterAdviceClass" class="com.springframework.springsample.AfterAdviceClass"></bean> 
+ <bean id="AroundAdviceClass" class="com.springframework.springsample.AroundAdviceClass"></bean> 
+ 	<bean id="custProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+ 		<property name="target" ref="cust"></property>
+ 		<property name="interceptorNames">
+ 			<list>
+ 			<!--  -->
+ 				<value>BeforeAdviceClass</value>
+ 				<value>AfterAdviceClass</value>
+ 				<value>AroundAdviceClass</value>
+ 			</list>
+ 		</property>
+ 		
+ 	</bean>
+ 	
+ 
+
+</beans>
